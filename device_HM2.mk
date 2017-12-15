@@ -3,9 +3,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-$(call inherit-product-if-exists, vendor/micromax/a106/a106-vendor.mk)
+$(call inherit-product-if-exists, vendor/Walton/HM2/HM2-vendor.mk)
 
-LOCAL_PATH := device/micromax/a106
+LOCAL_PATH := device/Walton/HM2
 
 PRODUCT_CHARACTERISTICS := default
 
@@ -163,8 +163,8 @@ PRODUCT_PROPERTY_OVERRIDES := \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.media.use-awesome=true
 
-PRODUCT_NAME := full_a106
-PRODUCT_DEVICE := a106
+PRODUCT_NAME := full_HM2
+PRODUCT_DEVICE := HM2
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 800
